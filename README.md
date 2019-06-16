@@ -33,7 +33,7 @@ Here is what a typical point in time looks like (in wavelength order):
 ![aia](images/aia_tile.png)
 
 Here's a more fun datapoint, an X9 flare -- the super bright spot is far brighter than
-everything else): 
+everything else: 
 
 ![aia](images/tile_aia_flare.png)
 
