@@ -2,6 +2,9 @@
 #David Fouhey
 #Linear regression demo
 #SDO/AIA + SDO/HMI -> SDO/EVE
+#
+# Given the AIA and HMI data files, predict the EVE values
+#
 
 import numpy as np
 import os, pdb, datetime, multiprocessing

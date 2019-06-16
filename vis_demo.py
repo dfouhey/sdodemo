@@ -1,6 +1,8 @@
 #!/usr/bin/python
 #David Fouhey
 #Visualize the data
+#
+#Pick a random (or specified) row and visualize it
 
 import sunpy
 from sunpy.cm import cm
@@ -38,9 +40,10 @@ def getClip(X,name):
     return getSignedPctClip(X) if name in HMI_WL else getPctClip(X)
 
 if __name__ == "__main__":
+
+    #Update to your location
     base = "/y/fouhey/SDO_MINI/"
     target = "/home/fouhey/public_html/SDODemo/"
-    #target = "images/"
 
     #None = random, otherwise it'll find the closest record for a date
     showDate = None
