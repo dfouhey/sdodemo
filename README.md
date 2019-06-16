@@ -80,7 +80,8 @@ Each line corresponds to a data point:
 How do I get the data?
 ----------------------
 
-We store all the data in a series of .tar files, one per-year, plus EVE and the metadata.
+We store all the data in a series of .tar files, one per-year, plus EVE and the metadata
+in [this google drive folder](https://github.com/dfouhey/sdodemo).
 
 
 How do you cite this?
