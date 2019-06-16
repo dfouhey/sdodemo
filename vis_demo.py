@@ -37,8 +37,8 @@ def getClip(X,name):
 
 if __name__ == "__main__":
     base = "/y/fouhey/SDO_MINI/"
-    #target = "/home/fouhey/public_html/SDODemo/"
-    target = "images/"
+    target = "/home/fouhey/public_html/SDODemo/"
+    #target = "images/"
 
     #None = random, otherwise it'll find the closest record for a date
     showDate = None
@@ -78,6 +78,21 @@ if __name__ == "__main__":
     fh = open("%s/view.htm" % target,"w")
     fh.write("%s<br/><br/>" % recordDate)
 
+    #Show the EVE
+    if record[0] == "None":
+        fh.write("<br/><br/>No SDO/EVE data")
+    else:
+        ind = int(record[0])
+        irradiance = np.load("%s/EVE/irradiance.npy" % base)[ind,:]
+        eveWavelength = np.load("%s/EVE/wavelength.npy" % base,allow_pickle=True)
+        eveNames = np.load("%s/EVE/name.npy" % base,allow_pickle=True)
+
+        for j in range(irradiance.size):
+            fh.write("%s (%d): %e; &nbsp; " % (eveNames[j],eveWavelength[j],irradiance[j]))
+
+
+    fh.write("<br/><br/>")
+
     #for every channel
     for chanI in range(len(channelFilenames)):
         channelName = channels[chanI]
@@ -93,7 +108,8 @@ if __name__ == "__main__":
         else:
             fh.write("SDO/AIA at %d Angstrom<br/>" % int(channelName)) 
         fh.write("<img src='%s.png'><br/><br/><hr/>" % channelName)
-    
+  
+
     fh.close()
 
          
