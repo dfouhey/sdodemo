@@ -1,4 +1,6 @@
 #!/usr/bin/python
+#David Fouhey
+#Visualize the data
 
 import sunpy
 from sunpy.cm import cm

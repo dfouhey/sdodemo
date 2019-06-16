@@ -1,10 +1,14 @@
 #!/usr/bin/python
+#David Fouhey
+#Linear regression demo
+#SDO/AIA + SDO/HMI -> SDO/EVE
 
 import numpy as np
 import os, pdb, datetime, multiprocessing
 
 
 def getX(record):
+    """Given a record from csv, produce a feature vector from the image"""
     vals = []
     print(record[2])
     for fn in record[3:]:
@@ -14,6 +18,7 @@ def getX(record):
 
 
 def learnify(XTr,Xs):
+    """Given training inputs and a set of features, z-score the inputs and add a one"""
     mu, std = np.mean(XTr,axis=0,keepdims=True), np.std(XTr,axis=0,keepdims=True)+1e-8
 
     XOut = []
