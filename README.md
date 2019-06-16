@@ -30,14 +30,14 @@ specifically the ultraviolet ones: 94A, 131A, 171A, 193A, 211A, 304A, 335A,
 missing. The data was originally 4096x4096 and is now 512x512.
 Here is what a typical point in time looks like: 
 
-![aia](aia_tile.png)
+![aia](images/aia_tile.png)
 
 2. SDO/HMI (Helioseismic and Magnetic Imager): This observes the sun at high resolution and
 produces a vector field (Bx,By,Bz) of the magnetic field of the sun. Here is what
 a typical point in time looks like. This data is 512x512. Note the alignment between the strong field
 and the bright spots in AIA:
 
-![hmi](hmi_tile.png)
+![hmi](images/hmi_tile.png)
 
 
 3. SDO/EVE (Extreme Ultraviolet Variability Experiment): This observes the sun at more
