@@ -81,7 +81,7 @@ How do I get the data?
 ----------------------
 
 We store all the data in a series of .tar files, one per-year, plus EVE and the metadata
-in [this google drive folder](https://github.com/dfouhey/sdodemo).
+in [this google drive folder](https://drive.google.com/drive/folders/1Fh-t7iiKAF-5cSSbd0ESaMtfeO74R9pT?usp=sharing).
 
 
 How do you cite this?
