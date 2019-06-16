@@ -32,11 +32,19 @@ Here is what a typical point in time looks like (in wavelength order):
 
 ![aia](images/aia_tile.png)
 
+Here's a more fun datapoint, an X9 flare: 
+
+![aia](images/aia_flare_tile.png)
+
 2. SDO/HMI (Helioseismic and Magnetic Imager): This observes the sun at high resolution and
 produces a vector field (Bx,By,Bz) of the magnetic field of the sun.  This data
 is 512x512. Note the alignment between the strong field and the bright spots in
 AIA. Here is what a typical point in time looks like (in the order of bx/by/bz): 
 ![hmi](images/hmi_tile.png)
+
+Here's the same X9 flare: 
+
+![aia](images/aia_flare_tile.png)
 
 
 3. SDO/EVE (Extreme Ultraviolet Variability Experiment): This observes the sun at more

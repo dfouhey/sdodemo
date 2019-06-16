@@ -43,12 +43,12 @@ if __name__ == "__main__":
 
     #Update to your location
     base = "/y/fouhey/SDO_MINI/"
-    target = "/home/fouhey/public_html/SDODemo/"
+    target = "imagesNew/"
 
     #None = random, otherwise it'll find the closest record for a date
-    showDate = None
+    #showDate = None
     #In the middle of an X9 flare
-    #showDate = datetime.datetime(year=2017,month=9,day=6,hour=12,minute=0)
+    showDate = datetime.datetime(year=2017,month=9,day=6,hour=12,minute=0)
 
     if not os.path.exists(target):
         os.mkdir(target)
@@ -66,7 +66,7 @@ if __name__ == "__main__":
         minDelta = datetime.timedelta(weeks=10000)
         for i in range(len(body)):
             recordDate = body[i].split(",")[2]
-            diff = abs(show-datetime.datetime.strptime(recordDate,"%Y-%m-%d %H:%M:%S"))
+            diff = abs(showDate-datetime.datetime.strptime(recordDate,"%Y-%m-%d %H:%M:%S"))
             if diff < minDelta:
                 print(diff)
                 recordInd, minDelta = i, diff
