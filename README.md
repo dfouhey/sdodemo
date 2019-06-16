@@ -11,7 +11,7 @@ of the dataset to get started with. Hopefully it's useful and a more productive
 and inspirational way of testing machine learning algorithms than yet another
 horribly contrived version of MNIST.
 
-Here's a [http://web.eecs.umich.edu/~fouhey/2019/apjs/vis.mp4](preview movie).
+Here's a [preview movie](http://web.eecs.umich.edu/~fouhey/2019/apjs/vis.mp4).
 
 What's in here?
 ---------------
