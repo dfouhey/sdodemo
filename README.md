@@ -28,15 +28,14 @@ resolution at 10 wavelengths. We've provided 9 of these channels,
 specifically the ultraviolet ones: 94A, 131A, 171A, 193A, 211A, 304A, 335A,
 1600A, 1700A (where 1 A (angstrom) = 10nm). I dropped 4500A, since it's often 
 missing. The data was originally 4096x4096 and is now 512x512.
-Here is what a typical point in time looks like: 
+Here is what a typical point in time looks like (in wavelength order): 
 
 ![aia](images/aia_tile.png)
 
 2. SDO/HMI (Helioseismic and Magnetic Imager): This observes the sun at high resolution and
-produces a vector field (Bx,By,Bz) of the magnetic field of the sun. Here is what
-a typical point in time looks like. This data is 512x512. Note the alignment between the strong field
-and the bright spots in AIA:
-
+produces a vector field (Bx,By,Bz) of the magnetic field of the sun.  This data
+is 512x512. Note the alignment between the strong field and the bright spots in
+AIA. Here is what a typical point in time looks like (in the order of bx/by/bz): 
 ![hmi](images/hmi_tile.png)
 
 
@@ -55,7 +54,7 @@ The data is stored:
 - *HMI* : as a set of images of the form ({$year}/HMI/{$wavelength}/{$month}/{$day}/HMI{$year}{$month}{$day}_{$hour}{$minute}_{$wavelength}.npz) e.g.,
 2013/HMI/bz/11/25/HMI20131125_0824_bz.npz 
 - *EVE*: as a single numpy file EVE/irradiance.npy, where each row is a date in time. Any invalid datapoint is set as -1, which you should specially handle
-or delete. The ones primarily of interest are from MEGS-A: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14] (note the missing 13); 15+ are rarely observed.
+or delete. The ones primarily of interest are from MEGS-A: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14] (note the missing 13); Indices 15 and higher are rarely observed.
 
 Each image is stored as a variable 'x' in each npz. For compression reasons,
 the data is stored as float16 if the data fits and float32 otherwise. You
@@ -73,9 +72,9 @@ eve_ind,reduced_ind,time,94,131,171,193,211,304,335,1600,1700,bx,by,bz
 Each line corresponds to a data point:
 - *eve_ind*: the index into irradiance.npy, or None if the data point is not valid
 - *reduce_ind*: the index into the original irradiance.npy file
-- *time* the time of the observation
-- (94/131/171/193/211/304/335/1600/1700) the corresponding AIA files
-- (bx/by/bz) the corresponding HMI files
+- *time*: the time of the observation
+- (94/131/171/193/211/304/335/1600/1700): the corresponding AIA files
+- (bx/by/bz): the corresponding HMI files
 
 
 How do I get the data?
