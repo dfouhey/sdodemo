@@ -73,8 +73,8 @@ Each line corresponds to a data point:
 - *eve_ind*: the index into irradiance.npy, or None if the data point is not valid
 - *reduce_ind*: the index into the original irradiance.npy file
 - *time*: the time of the observation
-- (94/131/171/193/211/304/335/1600/1700): the corresponding AIA files
-- (bx/by/bz): the corresponding HMI files
+- *(94/131/171/193/211/304/335/1600/1700)*: the corresponding AIA files
+- *(bx/by/bz)*: the corresponding HMI files
 
 
 How do I get the data?
