@@ -32,7 +32,8 @@ Here is what a typical point in time looks like (in wavelength order):
 
 ![aia](images/aia_tile.png)
 
-Here's a more fun datapoint, an X9 flare: 
+Here's a more fun datapoint, an X9 flare -- the super bright spot is far brighter than
+everything else): 
 
 ![aia](images/tile_aia_flare.png)
 
@@ -40,6 +41,7 @@ Here's a more fun datapoint, an X9 flare:
 produces a vector field (Bx,By,Bz) of the magnetic field of the sun.  This data
 is 512x512. Note the alignment between the strong field and the bright spots in
 AIA. Here is what a typical point in time looks like (in the order of bx/by/bz): 
+
 ![hmi](images/hmi_tile.png)
 
 Here's the same X9 flare: 
