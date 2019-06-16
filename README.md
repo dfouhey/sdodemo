@@ -26,7 +26,7 @@ data for the image data. In particular, the dataset contains data from these sen
 This observes the sun at high
 resolution at 10 wavelengths. We've provided 9 of these channels,
 specifically the ultraviolet ones: 94A, 131A, 171A, 193A, 211A, 304A, 335A,
-1600A, 1700A (where 1 A (angstrom) = 10nm). I dropped 4500A, since it's often 
+1600A, 1700A (where 1 A (angstrom) = 10 nanometer). I dropped 4500A, since it's often 
 missing. The data was originally 4096x4096 and is now 512x512.
 Here is what a typical point in time looks like (in wavelength order): 
 
@@ -76,6 +76,13 @@ Each line corresponds to a data point:
 - *(94/131/171/193/211/304/335/1600/1700)*: the corresponding AIA files
 - *(bx/by/bz)*: the corresponding HMI files
 
+
+What special libraries do I need?
+---------------------------------
+
+You need:
+- **numpy** for loading the data
+- *sunpy* if you'd like to visualize things the way space physics people like to see them
 
 How do I get the data?
 ----------------------
