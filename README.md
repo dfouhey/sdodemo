@@ -11,6 +11,8 @@ of the dataset to get started with. Hopefully it's useful and a more productive
 and inspirational way of testing machine learning algorithms than yet another
 horribly contrived version of MNIST.
 
+Here's a [http://web.eecs.umich.edu/~fouhey/2019/apjs/vis.mp4](preview movie).
+
 What's in here?
 ---------------
 
@@ -99,6 +101,11 @@ How do I get the data?
 
 We store all the data in a series of .tar files, one per-year, plus EVE and the metadata
 in [this google drive folder](https://drive.google.com/drive/folders/1Fh-t7iiKAF-5cSSbd0ESaMtfeO74R9pT?usp=sharing).
+
+If you like what you see, and you're ready for the real dataset, try
+downloading it from [the Stanford Digital Repository](https://purl.stanford.edu/nk828sc2920).
+
+
 
 
 How do you cite this?
