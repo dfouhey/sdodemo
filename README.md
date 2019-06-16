@@ -11,7 +11,7 @@ of the dataset to get started with. Hopefully it's useful and a more productive
 and inspirational way of testing machine learning algorithms than yet another
 horribly contrived version of MNIST.
 
-Here's a [preview movie](http://web.eecs.umich.edu/~fouhey/2019/apjs/vis.mp4).
+**Here's a [preview movie](http://web.eecs.umich.edu/~fouhey/2019/apjs/vis.mp4).**
 
 What's in here?
 ---------------
@@ -30,7 +30,8 @@ resolution at 10 wavelengths. We've provided 9 of these channels,
 specifically the ultraviolet ones: 94A, 131A, 171A, 193A, 211A, 304A, 335A,
 1600A, 1700A (where 1 A (angstrom) = 10 nanometer). I dropped 4500A, since it's often 
 missing. The data was originally 4096x4096 and is now 512x512.
-Here is what a typical point in time looks like (in wavelength order): 
+Here is what a typical point in time looks like (in wavelength order and visualized
+with the correct colormap): 
 
 ![aia](images/aia_tile.png)
 
@@ -42,7 +43,8 @@ everything else:
 2. SDO/HMI (Helioseismic and Magnetic Imager): This observes the sun at high resolution and
 produces a vector field (Bx,By,Bz) of the magnetic field of the sun.  This data
 is 512x512. Note the alignment between the strong field and the bright spots in
-AIA. Here is what a typical point in time looks like (in the order of bx/by/bz): 
+AIA. Here is what a typical point in time looks like (in the order of bx/by/bz and
+visualized with a blue(-)/black(0)/red(+) colormap): 
 
 ![hmi](images/hmi_tile.png)
 
@@ -54,6 +56,10 @@ Here's the same X9 flare:
 3. SDO/EVE (Extreme Ultraviolet Variability Experiment): This observes the sun at more
 wavelengths, and much higher temporal rate but at no spatial resolution (i.e., it's a scalar
 per wavelength).
+
+The dataset has, for approximately 60K timesteps, the corresponding AIA and HMI observations,
+and until the date when the EVE MEGS-A sensor had an electrical short, the corresponding
+EVE observation.
 
 
 How do I load the data?
@@ -116,7 +122,7 @@ If you find this data useful, cite it as
 @article{Galvez2019,
     author = {R. Galvez and D.F. Fouhey and M. Jin and A. Szenicer and A. Munoz-Jaramillo and M.C.M. Cheung and P.J. Wright and M.G. Bobra and Y. Liu and J. Mason and R. Thomas},
     title  = {A Machine Learning Dataset Prepared From the NASA Solar Dynamics Observatory Mission},
-    journal = {Accepted in The Astrophysical Journal Supplement},
+    journal = {The Astrophysical Journal Supplement},
     volume = 242,
     number = 1,
     year = 2019
