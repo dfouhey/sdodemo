@@ -37,7 +37,8 @@ def getClip(X,name):
 
 if __name__ == "__main__":
     base = "/y/fouhey/SDO_MINI/"
-    target = "/home/fouhey/public_html/SDODemo/"
+    #target = "/home/fouhey/public_html/SDODemo/"
+    target = "images/"
 
     #None = random, otherwise it'll find the closest record for a date
     showDate = None
