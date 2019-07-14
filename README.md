@@ -111,13 +111,17 @@ in [this google drive folder](https://drive.google.com/drive/folders/1Fh-t7iiKAF
 If you like what you see, and you're ready for the real dataset, try
 downloading it from [the Stanford Digital Repository](https://purl.stanford.edu/nk828sc2920).
 
+FAQ
+---
+
+**Q. It seems as if there's missing observations looking at the dates?**
+
+**A.**  SDO itself will have some missing observations due to calibration maneuvers and anomalies. To prevent ambiguity in the handling of partial observations apples-to-oranges experiments, Mini SDO has only full observations. The full dataset has the partial  observations  (i.e., if there's a 8/12 observation, the 8 valid ones are there). 
 
 
+**Q. How do you cite this?**
 
-How do you cite this?
----------------------
-
-If you find this data useful, cite it as 
+**A.** If you find this data useful, cite it as
 ```
 @article{Galvez2019,
     author = {R. Galvez and D.F. Fouhey and M. Jin and A. Szenicer and A. Munoz-Jaramillo and M.C.M. Cheung and P.J. Wright and M.G. Bobra and Y. Liu and J. Mason and R. Thomas},
@@ -128,4 +132,5 @@ If you find this data useful, cite it as
     year = 2019
 }
 ```
+
 
