@@ -116,7 +116,11 @@ FAQ
 
 **Q. It seems as if there's missing observations looking at the dates?**
 
-**A.**  SDO itself will have some missing observations due to calibration maneuvers and anomalies. To prevent ambiguity in the handling of partial observations apples-to-oranges experiments, Mini SDO has only full observations. The full dataset has the partial  observations  (i.e., if there's a 8/12 observation, the 8 valid ones are there). 
+**A.**  SDO itself will have some missing observations due to calibration
+maneuvers and anomalies. To prevent ambiguity in the handling of partial
+observations and apples-to-oranges experiments, Mini SDO has only full
+observations. The full dataset has the partial  observations  (i.e., if there's
+a 8/12 observation, the 8 valid ones are there). 
 
 
 **Q. How do you cite this?**
