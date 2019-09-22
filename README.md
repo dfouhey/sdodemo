@@ -106,7 +106,7 @@ How do I get the data?
 ----------------------
 
 We store all the data in a series of .tar files, one per-year, plus EVE and the metadata
-in [this google drive folder](https://drive.google.com/drive/folders/1Fh-t7iiKAF-5cSSbd0ESaMtfeO74R9pT?usp=sharing).
+[here](http://fouheylab.eecs.umich.edu/~fouhey/MiniSDO/).
 
 If you like what you see, and you're ready for the real dataset, try
 downloading it from [the Stanford Digital Repository](https://purl.stanford.edu/nk828sc2920).
